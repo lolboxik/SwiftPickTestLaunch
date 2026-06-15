@@ -1,0 +1,152 @@
+.auth-page {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.auth-card {
+  background: #252525;
+  padding: 2.5rem;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 420px;
+  border: 1px solid #333;
+}
+
+.auth-card h1 {
+  color: #eee;
+  margin: 0 0 0.4rem;
+  font-size: 1.75rem;
+  text-align: center;
+}
+
+.auth-subtitle {
+  color: #888;
+  text-align: center;
+  margin-bottom: 1.75rem;
+}
+
+.error-message {
+  background: rgba(200, 70, 70, 0.15);
+  color: #e06060;
+  padding: 0.85rem;
+  border-radius: 6px;
+  margin-bottom: 1.25rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.form-group {
+  margin-bottom: 1.25rem;
+}
+
+.form-group label {
+  display: block;
+  color: #999;
+  margin-bottom: 0.4rem;
+  font-size: 0.9rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.85rem;
+  border-radius: 6px;
+  border: 1px solid #3a3a3a;
+  background: #1e1e1e;
+  color: #ddd;
+  font-size: 0.95rem;
+  box-sizing: border-box;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #e8a838;
+}
+
+.auth-btn {
+  width: 100%;
+  padding: 0.85rem;
+  background: #e8a838;
+  color: #1a1a1a;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.auth-btn:hover:not(:disabled) {
+  background: #d4952e;
+}
+
+.auth-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.auth-footer {
+  text-align: center;
+  color: #888;
+  margin-top: 1.25rem;
+  font-size: 0.9rem;
+}
+
+.auth-footer a {
+  color: #e8a838;
+  text-decoration: none;
+}
+
+.auth-footer a:hover {
+  text-decoration: underline;
+}
+
+.oauth-section {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #333;
+  text-align: center;
+}
+
+.oauth-section p {
+  color: #888;
+  margin-bottom: 0.85rem;
+  font-size: 0.9rem;
+}
+
+.oauth-buttons {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.oauth-btn {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: opacity 0.2s;
+  font-size: 0.85rem;
+}
+
+.oauth-btn.google {
+  background: #db4437;
+  color: #fff;
+}
+
+.oauth-btn.vk {
+  background: #0077ff;
+  color: #fff;
+}
+
+.oauth-btn.yandex {
+  background: #fc0;
+  color: #000;
+}
+
+.oauth-btn:hover {
+  opacity: 0.85;
+}

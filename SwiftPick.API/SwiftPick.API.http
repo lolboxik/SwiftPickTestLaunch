@@ -1,0 +1,6 @@
+@SwiftPick.API_HostAddress = http://localhost:5259
+
+GET {{SwiftPick.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

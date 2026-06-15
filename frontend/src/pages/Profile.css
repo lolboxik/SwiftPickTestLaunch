@@ -1,0 +1,129 @@
+.profile-page {
+  min-height: 100vh;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.profile-card {
+  width: 100%;
+  max-width: 620px;
+  background: #252525;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 2rem;
+}
+
+.profile-card h1 {
+  color: #eee;
+  margin: 0 0 0.35rem;
+}
+
+.profile-subtitle {
+  color: #888;
+  margin: 0 0 1.5rem;
+}
+
+.profile-fields {
+  display: grid;
+  gap: 1rem;
+}
+
+.profile-field {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.profile-label {
+  color: #999;
+  font-size: 0.9rem;
+}
+
+.profile-value {
+  color: #eee;
+  font-size: 1rem;
+}
+
+.change-password-form {
+  margin-top: 1rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid #333;
+  display: grid;
+  gap: 1rem;
+}
+
+.change-password-form h2 {
+  color: #eee;
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.change-password-form input {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 6px;
+  border: 1px solid #3a3a3a;
+  background: #1e1e1e;
+  color: #ddd;
+  font-size: 0.95rem;
+}
+
+.change-password-form input:focus {
+  outline: none;
+  border-color: #e8a838;
+}
+
+.profile-message {
+  padding: 0.75rem;
+  border-radius: 6px;
+  border: 1px solid #3a3a3a;
+  font-size: 0.95rem;
+}
+
+.profile-message.success {
+  background: rgba(92, 184, 92, 0.15);
+  border-color: rgba(92, 184, 92, 0.25);
+  color: #5cb85c;
+}
+
+.profile-message.error {
+  background: rgba(200, 70, 70, 0.15);
+  border-color: rgba(200, 70, 70, 0.25);
+  color: #e06060;
+}
+
+.change-password-btn {
+  width: fit-content;
+  padding: 0.75rem 1.1rem;
+  background: #e8a838;
+  color: #1a1a1a;
+  border: none;
+  border-radius: 6px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.change-password-btn:hover:not(:disabled) {
+  background: #d4952e;
+}
+
+.change-password-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+@media (max-width: 600px) {
+  .profile-page {
+    padding: 1rem;
+  }
+
+  .profile-card {
+    padding: 1.25rem;
+  }
+
+  .change-password-btn {
+    width: 100%;
+  }
+}

@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #1a1a1a;
+  color: #d0d0d0;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.app[data-theme='light'] {
+  background: #f5f5f2;
+  color: #303030;
+  color-scheme: light;
+}
+
+.app[data-theme='light'] .header,
+.app[data-theme='light'] .footer,
+.app[data-theme='light'] .hero,
+.app[data-theme='light'] .benefits-section {
+  background: #ffffff;
+  color: #4a4a4a;
+}
+
+.app[data-theme='light'] .header {
+  box-shadow: 0 1px 8px rgba(20, 20, 20, 0.12);
+}
+
+.app[data-theme='light'] .logo,
+.app[data-theme='light'] .cart-btn,
+.app[data-theme='light'] .user-name {
+  color: #202020;
+}
+
+.app[data-theme='light'] .nav-link {
+  color: #555;
+}
+
+.app[data-theme='light'] .nav-link:hover {
+  color: #111;
+  background: rgba(0, 0, 0, 0.06);
+}
+
+.app[data-theme='light'] .cart-btn,
+.app[data-theme='light'] .user-name {
+  background: #ededed;
+}
+
+.app[data-theme='light'] .cart-btn:hover {
+  background: #e1e1e1;
+}
+
+.app[data-theme='light'] .user-dropdown {
+  background: #fff;
+  border-color: #dedede;
+  box-shadow: 0 8px 24px rgba(20, 20, 20, 0.16);
+}
+
+.app[data-theme='light'] .dropdown-item {
+  color: #404040;
+}
+
+.app[data-theme='light'] .dropdown-item:hover {
+  background: #f0f0f0;
+  color: #111;
+}
+
+.app[data-theme='light'] .filters,
+.app[data-theme='light'] .product-card,
+.app[data-theme='light'] .category-card,
+.app[data-theme='light'] .cart-item,
+.app[data-theme='light'] .cart-summary,
+.app[data-theme='light'] .order-card,
+.app[data-theme='light'] .about-card,
+.app[data-theme='light'] .admin-tabs,
+.app[data-theme='light'] .admin-card,
+.app[data-theme='light'] .admin-table,
+.app[data-theme='light'] .modal-content,
+.app[data-theme='light'] .auth-card,
+.app[data-theme='light'] .profile-card,
+.app[data-theme='light'] .product-detail,
+.app[data-theme='light'] .product-specs,
+.app[data-theme='light'] .product-gallery {
+  background: #ffffff;
+  border-color: #dedede;
+}
+
+.app[data-theme='light'] .product-image,
+.app[data-theme='light'] .image-placeholder,
+.app[data-theme='light'] .quantity-controls,
+.app[data-theme='light'] .thumbnail,
+.app[data-theme='light'] .stat-card {
+  background: #f0f0f0;
+  border-color: #dedede;
+}
+
+.app[data-theme='light'] h1,
+.app[data-theme='light'] h2,
+.app[data-theme='light'] h3,
+.app[data-theme='light'] h4,
+.app[data-theme='light'] .hero-title,
+.app[data-theme='light'] .section-title,
+.app[data-theme='light'] .catalog-content h1,
+.app[data-theme='light'] .filters h3,
+.app[data-theme='light'] .product-name,
+.app[data-theme='light'] .cart-title,
+.app[data-theme='light'] .cart-item h3,
+.app[data-theme='light'] .order-card h3,
+.app[data-theme='light'] .footer-section h4 {
+  color: #202020;
+}
+
+.app[data-theme='light'] p,
+.app[data-theme='light'] .hero-subtitle,
+.app[data-theme='light'] .product-description,
+.app[data-theme='light'] .benefit-card p,
+.app[data-theme='light'] .about-card p,
+.app[data-theme='light'] .products-count,
+.app[data-theme='light'] .loading,
+.app[data-theme='light'] .no-products,
+.app[data-theme='light'] .empty-cart,
+.app[data-theme='light'] .empty-orders,
+.app[data-theme='light'] .filter-group label,
+.app[data-theme='light'] .category-count,
+.app[data-theme='light'] .profile-subtitle,
+.app[data-theme='light'] .profile-label,
+.app[data-theme='light'] .footer,
+.app[data-theme='light'] .footer-bottom {
+  color: #666;
+}
+
+.app[data-theme='light'] .profile-value {
+  color: #202020;
+}
+
+.app[data-theme='light'] input,
+.app[data-theme='light'] select,
+.app[data-theme='light'] textarea,
+.app[data-theme='light'] .quantity-btn,
+.app[data-theme='light'] .quantity-input,
+.app[data-theme='light'] .admin-input,
+.app[data-theme='light'] .change-password-form input,
+.app[data-theme='light'] .form-group input,
+.app[data-theme='light'] .form-group select,
+.app[data-theme='light'] .form-group textarea,
+.app[data-theme='light'] .filter-group input,
+.app[data-theme='light'] .filter-group select {
+  background: #fff;
+  border-color: #cfcfcf;
+  color: #242424;
+}
+
+.app[data-theme='light'] input:focus,
+.app[data-theme='light'] select:focus,
+.app[data-theme='light'] textarea:focus,
+.app[data-theme='light'] .filter-group input:focus,
+.app[data-theme='light'] .filter-group select:focus {
+  border-color: #d4952e;
+}
+
+.app[data-theme='light'] table,
+.app[data-theme='light'] th,
+.app[data-theme='light'] td,
+.app[data-theme='light'] .order-items,
+.app[data-theme='light'] .summary-row,
+.app[data-theme='light'] .auth-divider,
+.app[data-theme='light'] .change-password-form,
+.app[data-theme='light'] .footer-bottom {
+  border-color: #dedede;
+}
+
+.app[data-theme='light'] .modal-overlay {
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.app[data-theme='light'] ::-webkit-scrollbar-track {
+  background: #f5f5f2;
+}
+
+.app[data-theme='light'] ::-webkit-scrollbar-thumb {
+  background: #c8c8c8;
+}
+
+body:has(.app[data-theme='light']) {
+  background: #f5f5f2;
+  color: #303030;
+}

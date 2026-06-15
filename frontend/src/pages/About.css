@@ -1,0 +1,43 @@
+.about-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.about-page h1 {
+  color: #eee;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.about-content {
+  background: #252525;
+  padding: 1.75rem;
+  border-radius: 8px;
+  border: 1px solid #333;
+}
+
+.about-content section {
+  margin-bottom: 1.75rem;
+}
+
+.about-content h2 {
+  color: #e8a838;
+  font-size: 1.3rem;
+  margin-bottom: 0.75rem;
+}
+
+.about-content p {
+  color: #ccc;
+  line-height: 1.7;
+}
+
+.about-content ul {
+  color: #ccc;
+  line-height: 1.9;
+}
+
+.about-content p strong {
+  color: #eee;
+}
